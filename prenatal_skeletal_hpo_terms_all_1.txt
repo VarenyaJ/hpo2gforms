@@ -1,6 +1,10 @@
 function hpo_questionnaire() {
 	var form = FormApp.create('Prenatal skeletal HPO term review part 1');
-	form.setDescription('Review one proposed HPO term per page. Term review grids are optional so you can skip unfamiliar terms, browse the full form, and return before submission. Please provide your name and email for response tracking.');
+	form.setDescription('Prenatal skeletal HPO term E-Delphi review.');
+var studyInformationItem = form.addSectionHeaderItem();
+studyInformationItem.setTitle('Study information')
+     .setHelpText('Thank you for agreeing to participate in this E-Delphi of prenatal skeletal dysplasia-related HPO terms. HPO terms are standardized terms used to describe clinical and imaging findings in a consistent way, facilitating communication, research, and genotype-phenotype studies.\n\nThere is a total of 43 terms to review; the review process may take 30-60 minutes to complete. Review one proposed HPO term per page. Term review grids are optional so you can skip unfamiliar terms, browse the full form, and return before submission.\n\nParticipant names and email addresses are being collected solely for the purpose of tracking survey responses and preventing duplicate submissions. All data will be reported in aggregate form.');
+
 form.addTextItem()
     .setTitle('Name:')
     .setRequired(true);
@@ -12,6 +16,9 @@ form.addTextItem()
      .setTitle('Email address:')
      .setRequired(true)
      .setValidation(emailValidation);
+
+var beginReviewPageBreakItem = form.addPageBreakItem();
+beginReviewPageBreakItem.setTitle('Begin term review');
 
 var sectionHeaderItem = form.addSectionHeaderItem();
 sectionHeaderItem.setTitle('Core details for [P001] Abnormal fetal estimated fetal weight')
