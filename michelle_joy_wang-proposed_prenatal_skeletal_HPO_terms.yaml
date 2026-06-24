@@ -1,0 +1,745 @@
+terms:
+  - id: P001
+    preferred_label: Abnormal fetal estimated fetal weight
+    status_note: ALREADY EXISTS; HP:0001511
+    synonyms:
+      - FGR
+      - Fetal growth restriction
+      - IUGR
+      - Intrauterine growth restriction
+      - Prenatal growth deficiency
+      - Small for gestational age infant
+    definition: |-
+      An abnormal restriction of fetal growth with fetal weight below the tenth percentile for gestational age.
+    pmids: []
+    parent: ""
+    disease_associations: []
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: Existing HPO term at https://hpo.jax.org/browse/term/HP:0001511.
+  - id: P002
+    preferred_label: Abnormal fetal thoracic circumference
+    status_note: Ready to SUBMIT
+    synonyms:
+      - Abnormal fetal TC
+      - decreased TC
+    definition: |-
+      An abnormal (reduced) fetal thoracic circumference is defined as a measurement below the 2.5th or 5th percentile for gestational age. The thoracic circumference is assessed on a transverse (axial) view of the fetal thorax at the level of the four-chamber cardiac view. This is performed by obtaining a true axial plane in which the four cardiac chambers are clearly visualized, with the spine posteriorly and the ribs seen circumferentially, typically just above the diaphragm where the heart occupies approximately one-third of the thoracic area. The outer contour of the chest wall (skin line) is then traced to obtain the circumference measurement.
+    pmids:
+      - PMID:3555087
+      - PMID:10419608
+    parent: |-
+      Abnormal fetal morphology - HP:0034058
+      Abnormal fetal skeletal morphology - HP:0025662
+    disease_associations:
+      - Thanatophoric dysplasia type I - OMIM:187600
+      - Thanatophoric dysplasia type II - OMIM:187601
+      - Short-rib thoracic dysplasia (Jeune syndrome) - OMIM:208500
+      - Short-rib polydactyly syndrome type I (Saldino-Noonan) - OMIM:263530
+      - Short-rib polydactyly syndrome type II (Majewski) - OMIM:263520
+      - Short-rib polydactyly syndrome type III (Verma-Naumoff) - OMIM:263510
+      - Short-rib polydactyly syndrome type IV (Beemer-Langer) - OMIM:269860
+      - Achondrogenesis type IA - OMIM:200600
+      - Achondrogenesis type IB - OMIM:600972
+      - Achondrogenesis type II / Hypochondrogenesis - OMIM:200610
+      - Osteogenesis imperfecta type II - OMIM:166210
+      - Campomelic dysplasia - OMIM:114290
+      - Hypophosphatasia (perinatal lethal) - OMIM:241500
+      - Achondroplasia - OMIM:100800
+      - Homozygous achondroplasia - OMIM:201250
+      - Ellis-van Creveld syndrome - OMIM:225500
+      - Spondylothoracic dysostosis - OMIM:277300
+      - Spondylocostal dysostosis - OMIM:608681
+      - Shwachman-Diamond syndrome - OMIM:260400
+      - Bilateral renal agenesis (Potter sequence) - OMIM:191830
+      - Autosomal recessive polycystic kidney disease - OMIM:263200
+      - Congenital diaphragmatic hernia - OMIM:142340
+      - Congenital diaphragmatic hernia (syndromic forms) - OMIM:222400
+      - Nonimmune hydrops fetalis - OMIM:236750
+      - Fetal akinesia deformation sequence (Pena-Shokeir) - OMIM:208150
+      - Myotonic dystrophy type 1 - OMIM:160900
+      - Spinal muscular atrophy - OMIM:253300
+      - Nemaline myopathy - OMIM:161800
+      - X-linked myotubular myopathy - OMIM:310400
+      - Trisomy 18 (Edwards syndrome) - OMIM:614748
+      - Trisomy 13 (Patau syndrome) - OMIM:613793
+      - Trisomy 21 (Down syndrome) - OMIM:190685
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P003
+    preferred_label: Abnormal fetal humerus length
+    status_note: Existing term: short fetal humerus length; HP:0011429
+    synonyms:
+      - Abnormal fetal HL
+    definition: |-
+      A short humerus length is defined as a length below the 2.5th percentile for gestational age or as a measurement less than 0.9 of that predicted by the measured biparietal diameter. The humerus should be measured with the bone perpendicular to the ultrasound beam and with epiphyseal cartilages visible but not included in the measurement.
+    pmids:
+      - PMID:16100637
+    parent: ""
+    disease_associations:
+      - Trisomy 21 (Down syndrome) - OMIM:190685
+      - Trisomy 18 (Edwards syndrome) - OMIM:614748
+      - Trisomy 13 (Patau syndrome) - OMIM:613793
+      - Achondroplasia - OMIM:100800
+      - Thanatophoric dysplasia type I - OMIM:187600
+      - Thanatophoric dysplasia type II - OMIM:187601
+      - Osteogenesis imperfecta type II - OMIM:166210
+      - Achondrogenesis type IA - OMIM:200600
+      - Achondrogenesis type IB - OMIM:600972
+      - Achondrogenesis type II / Hypochondrogenesis - OMIM:200610
+      - 3-M syndrome - OMIM:273750
+      - Campomelic dysplasia - OMIM:114290
+      - Chondrodysplasia punctata (rhizomelic type 1) - OMIM:215100
+      - Diastrophic dysplasia - OMIM:222600
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: Ready to add disease associations as an addendum.
+  - id: P004
+    preferred_label: Abnormal fetal scapula length
+    status_note: READY TO SUBMIT
+    synonyms:
+      - Abnormal fetal scapula
+      - hypoplastic fetal scapula
+    definition: |-
+      An abnormal (short) scapula length is defined as a measurement below the 5th percentile for gestational age or as a value greater than or equal to 3 standard deviations below the mean. The scapula is assessed by measuring the maximal distance from the acromion to the inferior angle. This is performed by first identifying the fetal spine in a longitudinal plane, then sweeping the transducer parallel and laterally, with gentle angulation as needed, until both landmarks are clearly visualized. Digital sonographic calipers are then placed at the acromion and inferior angle to obtain the measurement.
+    pmids:
+      - PMID:2695411
+      - PMID:7933014
+    parent: Abnormal fetal skeletal morphology
+    disease_associations:
+      - Campomelic dysplasia - OMIM:114290
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P005
+    preferred_label: Abnormal fetal clavicle length
+    status_note: READY TO SUBMIT
+    synonyms:
+      - Abnormal fetal clavicle length
+      - hypoplastic fetal clavicle
+    definition: |-
+      An abnormal (short) clavicle length is defined as a measurement below the 5th percentile for gestational age or as a value greater than or equal to 3 standard deviations below the mean. The clavicle is assessed by measuring the maximal distance between its medial and lateral ends. This is performed by obtaining an axial sonographic view just cephalad to the level of the thoracic inlet, where the clavicular curvature and configuration are clearly visualized. Calipers are then placed at the medial and lateral aspects of the clavicle to obtain the measurement.
+    pmids:
+      - PMID:3903198
+      - PMID:16450360
+    parent: Abnormal fetal skeletal morphology
+    disease_associations:
+      - Cleidocranial dysplasia - OMIM:119600
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P006
+    preferred_label: Abnormal fetal lung volume
+    status_note: READY TO SUBMIT
+    synonyms:
+      - Abnormal fetal FLV
+    definition: |-
+      An abnormal fetal lung volume is defined as sonographic and/or fetal MRI evidence that total fetal lung volume is outside the expected range for gestational age, including either decreased lung volume (pulmonary hypoplasia) or increased lung volume (pulmonary enlargement) as determined by specific biometric measurements or other validated imaging criteria.
+    pmids: []
+    parent: Abnormal fetal pulmonary morphology - HP:0034243
+    disease_associations: []
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: |-
+      Child terms: Enlarged fetal lungs (HP:6000613); Decreased fetal lung volume (separate HPO term).
+  - id: P007
+    preferred_label: Decreased fetal lung volume
+    status_note: READY TO SUBMIT
+    synonyms:
+      - Decreased fetal FLV
+    definition: |-
+      A decreased fetal lung volume is defined as a value below the 5th percentile for gestational age or estimated fetal weight, or greater than or equal to 2 standard deviations below the mean, as measured by three-dimensional (3D) ultrasound or fetal MRI methods, and may be observed across a range of fetal conditions associated with pulmonary hypoplasia, including those that restrict thoracic capacity (e.g. skeletal dysplasias), cause intrathoracic mass effect (e.g. congenital diaphragmatic hernia), reduce amniotic fluid (e.g. Potter sequence or renal dysfunction), impair fetal breathing, or disrupt primary lung development. On ultrasound, fetal lung volume is typically assessed using 3D techniques--either a multiplanar summation-of-areas approach or the rotational VOCAL method--where each lung is measured separately by tracing boundaries across sequential slices, excluding mediastinal structures. When ultrasound assessment is equivocal, fetal MRI may be used to improve prognostication, with lung volume calculated from sequential single-shot fast spin-echo (SSFSE) T2-weighted images in the coronal plane by outlining the lungs across contiguous slices to generate total volume.
+    pmids:
+      - PMID:25102973
+      - PMID:10419608
+      - PMID:8765272
+      - PMID:20582919
+      - PMID:15459321
+    parent: Abnormal fetal lung volume
+    disease_associations:
+      - Hydrops fetalis, nonimmune - OMIM:236750
+      - Trisomy 13 (Patau syndrome) - OMIM:613793
+      - Trisomy 18 (Edwards syndrome) - OMIM:614748
+      - Myotonic dystrophy type 1 (DM1) - OMIM:160900
+      - Spinal muscular atrophy (SMA type 0/1) - OMIM:253300
+      - Congenital muscular dystrophies (e.g., LAMA2-related) - OMIM:607855
+      - Fetal akinesia deformation sequence (Pena-Shokeir) - OMIM:208150
+      - Anencephaly - OMIM:206500
+      - Bilateral renal agenesis (Potter sequence) - OMIM:191830
+      - Autosomal recessive polycystic kidney disease (ARPKD) - OMIM:263200
+      - Congenital diaphragmatic hernia - OMIM:142340, OMIM:222400
+      - Thanatophoric dysplasia (types I & II) - OMIM:187600, OMIM:187601
+      - Osteogenesis imperfecta type II - OMIM:166210
+      - Achondrogenesis type IA - OMIM:200600
+      - Achondrogenesis type IB - OMIM:600972
+      - Achondrogenesis type II (Langer-Saldino) - OMIM:200610
+      - Hypochondrogenesis - OMIM:200610
+      - Asphyxiating thoracic dystrophy (Jeune syndrome) - OMIM:208500
+      - Campomelic dysplasia - OMIM:114290
+      - Short-rib polydactyly syndrome type I (Saldino-Noonan) - OMIM:263530
+      - Short-rib polydactyly syndrome type II (Majewski) - OMIM:263520
+      - Short-rib polydactyly syndrome type III (Verma-Naumoff) - OMIM:263510
+      - Short-rib polydactyly syndrome type IV (Beemer-Langer) - OMIM:269860
+      - Platyspondylic lethal skeletal dysplasia, Torrance type - OMIM:151210
+      - Hypophosphatasia (perinatal lethal form) - OMIM:241500
+      - Ellis-van Creveld syndrome - OMIM:225500
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P008
+    preferred_label: Decreased fetal femur length:abdominal circumference ratio
+    status_note: READY TO SUBMIT
+    synonyms:
+      - Decreased fetal FL:AC ratio
+    definition: |-
+      An abnormal (decreased) fetal femur length-to-abdominal circumference (FL/AC) ratio is defined as a value less than 0.16, which is concerning for a life-limiting skeletal dysplasia. The femur length is measured from the outer border of one end of the ossified femoral diaphysis to the other, excluding the epiphyses and artifact, while the abdominal circumference is obtained in a transverse view by tracing the outer skin line at the level where the stomach, umbilical vein, and portal sinus are visualized. The FL/AC ratio reflects the degree of limb shortening relative to fetal size and has been shown to be one of the best-performing predictors of lethality, outperforming femur length alone and other proportional indices; however, it reflects severity rather than diagnosis.
+    pmids:
+      - PMID:9369835
+      - PMID:39078648
+    parent: Abnormal fetal skeletal morphology - HP:0025662
+    disease_associations:
+      - Thanatophoric dysplasia type I - OMIM:187600
+      - Thanatophoric dysplasia type II - OMIM:187601
+      - Achondrogenesis type IA - OMIM:200600
+      - Achondrogenesis type IB - OMIM:600972
+      - Achondrogenesis type II / Hypochondrogenesis - OMIM:200610
+      - Osteogenesis imperfecta type II - OMIM:166210
+      - Short-rib thoracic dysplasia - OMIM:208500
+      - Short-rib polydactyly syndrome type I (Saldino-Noonan) - OMIM:263530
+      - Short-rib polydactyly syndrome type II (Majewski) - OMIM:263520
+      - Short-rib polydactyly syndrome type III (Verma-Naumoff) - OMIM:263510
+      - Short-rib polydactyly syndrome type IV (Beemer-Langer) - OMIM:269860
+      - Campomelic dysplasia - OMIM:114290
+      - Homozygous achondroplasia - OMIM:100800
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P009
+    preferred_label: Reduced fetal femur/foot length ratio
+    status_note: Already exists as Reduced fetal femur/foot length ratio; HP:0025663
+    synonyms:
+      - Decreased fetal femur:foot ratio
+    definition: |-
+      This ratio relates the length of the fetal femur to that of the fetal foot. The ratio is approximately 1 throughout the age range of 14 to 40 weeks of gestation. A substantial reduction in the ratio can help differentiate fetuses that have dysplastic limb reduction from those whose limbs are short because of constitutional factors or IUGR. It can reduce the problem of an unknown gestational age and help to distinguish between fetal skeletal dysplasia and intrauterine growth retardation caused by other factors.
+    pmids:
+      - PMID:36575575
+    parent: ""
+    disease_associations: []
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: "Addendum to existing term: A ratio <0.89 is concerning for a more severe or potentially life-limiting skeletal dysplasia. PMID:36575575"
+  - id: P010
+    preferred_label: Champagne Cork Sign
+    status_note: ALREADY EXISTS; HP:0034226
+    synonyms: []
+    definition: |-
+      Characteristic appearance of the chest and abdomen in the sagittal view on prenatal ultrasound when the chest is small and the abdomen protruding.
+    pmids: []
+    parent: Decreased fetal thoracic circumference:abdominal circumference ratio
+    disease_associations: []
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: Existing HPO term at https://hpo.jax.org/browse/term/HP:0034226. Listed as a child term under decreased fetal thoracic circumference:abdominal circumference ratio in the source notes.
+  - id: P011
+    preferred_label: Decreased fetal femur length:biparietal diameter ratio
+    status_note: READY TO SUBMIT
+    synonyms:
+      - Decreased fetal FL:BPD ratio
+    definition: |-
+      An abnormal (decreased) fetal femur length-to-biparietal diameter (FL/BPD) ratio is defined as a value less than 0.376, which is associated with a significantly increased likelihood of skeletal dysplasia. The femur length is measured from the outer border of one end of the ossified femoral diaphysis to the other, excluding the epiphyses and artifact, while the biparietal diameter is measured on ultrasound at the level of the thalami and cavum septi pellucidi, using an outer-to-inner technique. This ratio reflects limb shortening relative to head size and serves as a screening marker for skeletal dysplasia.
+    pmids:
+      - PMID:36575575
+    parent: Abnormal fetal skeletal morphology - HP:0025662
+    disease_associations: []
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P012
+    preferred_label: Decreased fetal thoracic circumference:abdominal circumference ratio
+    status_note: READY TO SUBMIT
+    synonyms:
+      - Decreased fetal TC:AC ratio
+    definition: |-
+      An abnormal (decreased) fetal thoracic circumference-to-abdominal circumference (TC/AC) ratio is defined as a value less than 0.6, which is concerning for a disproportionately narrow thorax. The thoracic circumference is measured on ultrasound in a transverse view at the level of the four-chamber cardiac view by tracing the outer skin line of the chest wall, while the abdominal circumference is obtained in a transverse plane at the level of the stomach, umbilical vein, and portal sinus, also using the outer skin line. This ratio reflects thoracic size relative to overall fetal size, with decreased values indicating severe thoracic restriction, which can be associated with severe and life-limiting skeletal dysplasias.
+    pmids:
+      - PMID:39078648
+    parent: Abnormal fetal skeletal morphology
+    disease_associations:
+      - Thanatophoric dysplasia type I - OMIM:187600
+      - Thanatophoric dysplasia type II - OMIM:187601
+      - Achondrogenesis type IA - OMIM:200600
+      - Achondrogenesis type IB - OMIM:600972
+      - Achondrogenesis type II / Hypochondrogenesis - OMIM:200610
+      - Osteogenesis imperfecta type II - OMIM:166210
+      - Short-rib thoracic dysplasia - OMIM:208500
+      - Short-rib polydactyly syndrome type I (Saldino-Noonan) - OMIM:263530
+      - Short-rib polydactyly syndrome type II (Majewski) - OMIM:263520
+      - Short-rib polydactyly syndrome type III (Verma-Naumoff) - OMIM:263510
+      - Short-rib polydactyly syndrome type IV (Beemer-Langer) - OMIM:269860
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: Child term suggested: Champagne Cork Sign - HP:0034226.
+  - id: P013
+    preferred_label: Abnormal fetal cardiac circumference: thoracic circumference ratio
+    status_note: READY TO SUBMIT
+    synonyms:
+      - Abnormal fetal cardiothoracic ratio
+      - increased fetal C/T ratio
+    definition: |-
+      An abnormal (increased) fetal cardiothoracic (C/T) ratio is defined as a C/T circumference ratio greater than or equal to 0.50. The C/T ratio is measured on ultrasound using a transverse image of the fetal chest at the level of the four-chamber view during diastole, by assessing cardiac size relative to the thorax, which should appear symmetric and near-circular with the spine at approximately 6 or 12 o'clock and the heart occupying about one-third of the thoracic area.
+    pmids:
+      - PMID:34647342
+    parent: Abnormal fetal morphology
+    disease_associations:
+      - Ebstein anomaly - OMIM:224700
+      - Short-rib thoracic dysplasia - OMIM:208500
+      - Thanatophoric dysplasia - OMIM:187600, OMIM:187601
+      - Osteogenesis imperfecta type II - OMIM:166210
+      - Congenital diaphragmatic hernia - OMIM:142340
+      - Cardiac rhabdomyoma - OMIM:191100
+      - Tuberous sclerosis complex - OMIM:191100, OMIM:613254
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: Collaborator was not sure whether this lives under skeletal, cardiac, or pulmonary.
+  - id: P014
+    preferred_label: Fetal frontal bossing
+    status_note: READY TO SUBMIT
+    synonyms: []
+    definition: |-
+      Fetal frontal bossing is defined as abnormal prominence or protrusion of the frontal bone, assessed on the midsagittal profile view of the fetal face on ultrasound. It is typically identified by subjective evaluation on 2D ultrasound, characterized by an exaggerated convexity or bulging of the frontal contour relative to the expected fetal profile.
+    pmids:
+      - PMID:9315184
+    parent: Fetal head anomaly - HP:0034245
+    disease_associations:
+      - Achondroplasia - OMIM:100800
+      - Hypochondroplasia - OMIM:146000
+      - Thanatophoric dysplasia type I - OMIM:187600
+      - Thanatophoric dysplasia type II - OMIM:187601
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P015
+    preferred_label: Fetal craniosynostosis
+    status_note: Ready to Submit
+    synonyms: []
+    definition: |-
+      Fetal craniosynostosis is defined as the premature fusion of one or more cranial sutures in utero, resulting in abnormal skull growth and head shape. It is assessed on prenatal ultrasound by evaluating the contour of the fetal skull and sutures, with findings that may include abnormal head shape.
+    pmids:
+      - PMID:35998125
+    parent: Fetal head anomaly - HP:0034245
+    disease_associations:
+      - Thanatophoric dysplasia type II - OMIM:187601
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P016
+    preferred_label: Fetal brachycephaly
+    status_note: Ready to Submit
+    synonyms: []
+    definition: |-
+      Fetal brachycephaly is defined as an abnormally rounded or shortened skull shape in which the biparietal diameter is disproportionately increased relative to the occipitofrontal diameter, resulting in an elevated cephalic index. The cephalic index is calculated as BPD/OFD multiplied by 100 and is assessed on ultrasound in an axial plane of the fetal head at the level of the thalami and cavum septi pellucidi. Brachycephaly is typically defined as a cephalic index greater than or equal to 83-85, with gestational age-specific norms applied. This finding may represent a normal variant but can also be associated with craniosynostosis, particularly bicoronal synostosis, chromosomal abnormalities such as trisomy 21, skeletal dysplasias, or extrinsic compressive forces.
+    pmids:
+      - PMID:2677864
+      - PMID:11772173
+    parent: Fetal craniosynostosis
+    disease_associations:
+      - Muenke syndrome - OMIM:602849
+      - Saethre-Chotzen syndrome - OMIM:101400
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P017
+    preferred_label: Fetal dolichocephaly
+    status_note: Ready to Submit
+    synonyms: []
+    definition: |-
+      Fetal dolichocephaly is defined as an elongated skull shape in which the occipitofrontal diameter is disproportionately increased relative to the biparietal diameter, resulting in a decreased cephalic index less than 74. The cephalic index is calculated as BPD/OFD multiplied by 100 on an axial ultrasound view at the level of the thalami and cavum septi pellucidi. It is most commonly due to positional factors with patent sutures and absence of frontal bossing.
+    pmids:
+      - PMID:6787895
+    parent: Fetal craniosynostosis
+    disease_associations: []
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P018
+    preferred_label: Fetal trigonocephaly
+    status_note: Already Exists; HP:4000142
+    synonyms: []
+    definition: |-
+      A fetal ultrasound finding defined by flattening of the occiput with pointing of the frontal bones and brachycephaly with an increased cephalic index. It is characterized by keel shaped deformity of forehead with midline ridge, bilateral fronto temporal constriction with compensatory biparietal expansion, supra orbital and lateral orbital retrusion and hypotelorism. This finding is said to resemble a strawberry.
+    pmids: []
+    parent: Fetal skeletal abnormality
+    disease_associations:
+      - Hypophosphatasia - OMIM:241500
+      - Osteoglophonic dysplasia - OMIM:166250
+      - Campomelic dysplasia - OMIM:114290
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: Existing term has no disease associations; collaborator proposes adding listed associations.
+  - id: P019
+    preferred_label: Fetal scaphocephaly
+    status_note: Ready to Submit
+    synonyms: []
+    definition: |-
+      Fetal scaphocephaly is defined as an elongated, narrow skull shape caused by premature fusion of the sagittal suture. It is characterized by anteroposterior elongation with biparietal narrowing, resulting in a decreased cephalic index, and is assessed on ultrasound in axial and sagittal views of the fetal head. Unlike dolichocephaly, cranial sutures are fused rather than patent, and frontal and occipital bossing are often present and may become more pronounced over time.
+    pmids:
+      - PMID:28553772
+      - PMID:32868470
+    parent: Fetal craniosynostosis
+    disease_associations:
+      - Thanatophoric dysplasia type II - OMIM:187601
+      - Antley-Bixler syndrome - OMIM:207410
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P020
+    preferred_label: Fetal cloverleaf skull
+    status_note: Ready to Submit
+    synonyms:
+      - Fetal kleeblattschadel
+    definition: |-
+      Fetal cloverleaf skull (Kleeblattschadel) is defined as a severe form of multisuture craniosynostosis resulting in a characteristic trilobar skull shape. It is caused by premature fusion of multiple cranial sutures, most commonly the coronal and lambdoid sutures, with compensatory expansion through remaining patent regions. On prenatal ultrasound, it is identified by a distinctive trilobed cranial contour on axial views, with three bulging regions (two temporal and one frontal/superior), often accompanied by turricephaly, abnormal head biometry, ventriculomegaly, and marked proptosis. This finding reflects severe disruption of normal skull growth and is associated with significant morbidity.
+    pmids:
+      - PMID:7346817
+    parent: Fetal craniosynostosis
+    disease_associations:
+      - Thanatophoric dysplasia type II - OMIM:187601
+      - Pfeiffer syndrome - OMIM:101600
+      - Crouzon syndrome - OMIM:123500
+      - Apert syndrome - OMIM:101200
+      - Carpenter syndrome - OMIM:201000
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P021
+    preferred_label: Abnormal fetal ribs
+    status_note: Ready to submit
+    synonyms: []
+    definition: |-
+      Abnormal fetal ribs are defined as deviations in the number, size, shape, or configuration of the ribs identified on prenatal ultrasound. These abnormalities may include shortened ribs, absent or supernumerary ribs, irregular contour, fractures, or abnormal spacing. The ribs are assessed on axial and coronal views of the fetal thorax, where they should appear as symmetric, evenly spaced echogenic arcs encircling the chest. Abnormal rib findings often reflect underlying skeletal dysplasias or thoracic restriction and may contribute to a small thoracic cage and risk of pulmonary hypoplasia.
+    pmids:
+      - PMID:40952954
+    parent: Abnormal fetal skeletal morphology - HP:0025662
+    disease_associations: []
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P022
+    preferred_label: Decreased fetal rib length
+    status_note: Ready to submit
+    synonyms:
+      - Short fetal ribs
+    definition: |-
+      Decreased fetal rib length is defined as ribs that are shorter than expected for gestational age, typically below the 5th percentile or associated with a disproportionately small thorax. It is assessed on ultrasound in axial views of the chest, though surrogate measures such as thoracic circumference are often used. This finding is a key marker of skeletal dysplasia and is associated with pulmonary hypoplasia and increased risk of perinatal lethality.
+    pmids:
+      - PMID:8705412
+    parent: Abnormal fetal ribs
+    disease_associations:
+      - Short-rib thoracic dysplasia (Jeune syndrome) - OMIM:208500
+      - Ellis-van Creveld syndrome - OMIM:225500
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P023
+    preferred_label: Fetal rib fractures
+    status_note: Ready to submit
+    synonyms:
+      - Fetal rib beading
+    definition: |-
+      Fetal rib fractures are defined as disruptions of the normal continuity of the rib cortex identified on prenatal ultrasound. They appear as discontinuities, angulations, or areas of callus formation along the rib shafts. Rib beading refers to a related finding characterized by a rosary bead or string of pearls appearance, reflecting multiple healing fractures or callus formation at regular intervals. These findings are most commonly associated with disorders of bone fragility, such as osteogenesis imperfecta.
+    pmids:
+      - PMID:3293447
+    parent: Abnormal fetal ribs
+    disease_associations:
+      - Osteogenesis imperfecta - OMIM:166200
+      - Osteogenesis imperfecta type II - OMIM:166210
+      - Achondrogenesis type IA - OMIM:200600
+      - Achondrogenesis type IB - OMIM:600972
+      - Achondrogenesis type II - OMIM:200610
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P024
+    preferred_label: Abnormal fetal spine
+    status_note: Ready to submit
+    synonyms: []
+    definition: |-
+      Abnormal fetal spine is defined as any deviation in the alignment, segmentation, curvature, or integrity of the vertebral column identified on prenatal ultrasound. It is assessed in sagittal, coronal, and axial planes, where the spine should appear as a continuous, evenly spaced series of ossification centers with normal curvature.
+    pmids:
+      - PMID:34723699
+    parent: Abnormal fetal skeletal morphology - HP:0025662
+    disease_associations: []
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P025
+    preferred_label: Fetal platyspondyly
+    status_note: Ready to Submit
+    synonyms:
+      - Fetal flattened spinal body
+    definition: |-
+      Fetal platyspondyly is defined as flattening of the vertebral bodies, in which vertebral body height is reduced relative to the adjacent intervertebral disc space, resulting in a decreased vertebral body height-to-interspace ratio. It is assessed on prenatal ultrasound in a sagittal view of the spine by comparing the height of the vertebral ossification centers to the intervertebral spaces.
+    pmids:
+      - PMID:2403680
+    parent: Abnormal fetal spine
+    disease_associations:
+      - Spondyloepiphyseal dysplasia congenita - OMIM:183900
+      - Kniest dysplasia - OMIM:156550
+      - Achondroplasia - OMIM:100800
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P026
+    preferred_label: Fetal bullet shaped spine
+    status_note: Ready to Submit
+    synonyms:
+      - Fetal anterior wedging of spine
+    definition: |-
+      Fetal bullet-shaped vertebrae are defined as vertebral bodies with anterior rounding and posterior concavity, creating a characteristic bullet-like profile on lateral view. This morphology is most classically associated with achondroplasia and other FGFR3-related skeletal dysplasias. On prenatal ultrasound, the finding is typically inferred on sagittal views as mild platyspondyly with abnormal vertebral body contour, though it is more clearly appreciated on postnatal radiographs.
+    pmids:
+      - PMID:2403680
+    parent: Abnormal fetal spine
+    disease_associations:
+      - Achondroplasia - OMIM:100800
+      - Thanatophoric dysplasia type I - OMIM:187600
+      - Thanatophoric dysplasia type II - OMIM:187601
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P027
+    preferred_label: Fetal hemivertebrae
+    status_note: ready to submit
+    synonyms: []
+    definition: |-
+      Fetal hemivertebrae are congenital vertebral anomalies caused by unilateral failure of vertebral body formation, resulting in a wedge-shaped vertebra. On ultrasound, they are identified by focal spinal angulation or scoliosis on coronal view, disruption of normal alignment on sagittal view, and asymmetric or absent ossification centers on axial view.
+    pmids:
+      - PMID:39978942
+      - PMID:15692206
+    parent: Abnormal fetal spine
+    disease_associations:
+      - Spondylocostal dysostosis - OMIM:277300
+      - Klippel-Feil syndrome - OMIM:118100
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P028
+    preferred_label: Fetal long bone bowing
+    status_note: ready to submit
+    synonyms:
+      - Fetal bone bowing
+    definition: |-
+      Long bone bowing is defined as abnormal curvature or angulation of the diaphysis of one or more long bones, most commonly the femur and tibia. It is assessed on prenatal ultrasound in sagittal views, where the long bones should appear straight and symmetric bilaterally. Evaluation of the extremities should include assessment for bowing, fractures, ossification, and symmetry.
+    pmids:
+      - PMID:17486589
+    parent: Abnormal fetal skeletal morphology - HP:0025662
+    disease_associations:
+      - Achondroplasia - OMIM:100800
+      - Thanatophoric dysplasia type I - OMIM:187600
+      - Campomelic dysplasia - OMIM:114290
+      - Osteogenesis imperfecta - OMIM:166200
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P029
+    preferred_label: Fetal long bone epiphyseal abnormality
+    status_note: Ready to submit
+    synonyms:
+      - Abnormal fetal epiphyses
+    definition: |-
+      Fetal long bone epiphyseal abnormality is defined as abnormal size, shape, timing, or ossification of the secondary ossification centers at the ends of long bones. On ultrasound, these epiphyses normally appear as echogenic, egg-shaped foci in a gestational age-dependent sequence but may be delayed, absent, irregular, or enlarged when abnormal. These findings may indicate skeletal dysplasia or disordered endochondral ossification.
+    pmids:
+      - PMID:6726877
+    parent: Abnormal fetal skeletal morphology - HP:0025662
+    disease_associations:
+      - Multiple epiphyseal dysplasia, dominant - OMIM:132400
+      - Multiple epiphyseal dysplasia, recessive - OMIM:226900
+      - Spondyloepiphyseal dysplasia congenita - OMIM:183900
+      - Achondroplasia - OMIM:100800
+      - Spondyloepimetaphyseal dysplasia - OMIM:271700
+      - Thanatophoric dysplasia type I - OMIM:187600
+      - Thanatophoric dysplasia type II - OMIM:187601
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P030
+    preferred_label: Fetal long bone metaphyseal abnormality
+    status_note: Ready to submit
+    synonyms:
+      - Abnormal fetal metaphyses
+    definition: |-
+      Fetal long bone metaphyseal abnormality is defined as abnormal size, shape, contour, or mineralization of the metaphysis, the region between the diaphysis and epiphysis of a long bone. On ultrasound, the metaphysis may appear flared, widened, irregular, cupped, or poorly ossified. These findings reflect abnormal endochondral bone formation and are commonly associated with skeletal dysplasias.
+    pmids:
+      - PMID:37351952
+      - PMID:19265753
+    parent: Abnormal fetal skeletal morphology - HP:0025662
+    disease_associations:
+      - Schmid metaphyseal chondrodysplasia - OMIM:156500
+      - Jansen metaphyseal chondrodysplasia - OMIM:156400
+      - Gaucher disease - OMIM:230800
+      - Craniometaphyseal dysplasia - OMIM:123000
+      - Achondroplasia - OMIM:100800
+      - Spondyloepimetaphyseal dysplasia - OMIM:271700
+      - Thanatophoric dysplasia type I - OMIM:187600
+      - Thanatophoric dysplasia type II - OMIM:187601
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P031
+    preferred_label: Fetal metaphyseal flaring
+    status_note: ready to submit
+    synonyms:
+      - Erlenmeyer flask deformity
+    definition: |-
+      Fetal metaphyseal flaring, also known as an Erlenmeyer flask deformity, is defined as abnormal widening or splaying of the metaphyses, which are the transitional zones between the diaphysis and epiphysis. This results in a disproportionately broad bone end relative to the diaphyseal width on prenatal ultrasound.
+    pmids:
+      - PMID:19444897
+    parent: Fetal long bone metaphyseal abnormality
+    disease_associations:
+      - Gaucher disease - OMIM:230800
+      - Craniometaphyseal dysplasia - OMIM:123000
+      - Achondroplasia - OMIM:100800
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P032
+    preferred_label: Abnormal fetal metaphyseal-diaphyseal angle
+    status_note: ready to submit
+    synonyms: []
+    definition: |-
+      An abnormal (increased) fetal metaphyseal-diaphyseal angle is defined as a value greater than or equal to 125 degrees, compared with a normal angle of approximately 95 degrees, and is suggestive of achondroplasia. This angle is measured on ultrasound at the proximal femur or humerus by assessing the junction between the metaphysis and diaphysis, with the long axis of the diaphysis and the contour of the metaphysis used to define the angle. An increased angle reflects abnormal bone modeling and widening at the metaphyseal-diaphyseal junction, a characteristic feature of achondroplasia.
+    pmids:
+      - PMID:26450406
+    parent: Fetal long bone metaphyseal abnormality
+    disease_associations:
+      - Achondroplasia - OMIM:100800
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P033
+    preferred_label: Fetal collar hoop sign
+    status_note: ready to submit
+    synonyms: []
+    definition: |-
+      The fetal collar hoop sign is an imaging finding characterized by abnormal morphology at the proximal femur, in which the metaphysis appears rounded with poor or irregular ossification and an abnormal, widened transition to the diaphysis. This configuration is associated with relative periosteal overgrowth, creating a collar- or hoop-like appearance surrounding the metaphyseal-diaphyseal junction. On ultrasound, it is identified as a rounded metaphyseal-epiphyseal interface with a broader-than-expected angle of connection to the diaphysis, reflecting disorganized ossification and abnormal bone modeling.
+    pmids:
+      - PMID:19399756
+    parent: Fetal long bone metaphyseal abnormality
+    disease_associations:
+      - Achondroplasia - OMIM:100800
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P034
+    preferred_label: Fetal rhizomelia
+    status_note: ready to submit
+    synonyms: []
+    definition: |-
+      Fetal rhizomelia is defined as disproportionate shortening of the proximal segments of the limbs, particularly the humerus and femur, relative to gestational age. It is assessed on prenatal ultrasound by measuring long bone lengths and comparing them to expected norms, with the proximal segments appearing more shortened than the distal segments.
+    pmids:
+      - PMID:37675393
+    parent: Abnormal fetal skeletal morphology - HP:0025662
+    disease_associations:
+      - Achondroplasia - OMIM:100800
+      - Thanatophoric dysplasia type I - OMIM:187600
+      - Thanatophoric dysplasia type II - OMIM:187601
+      - Rhizomelic chondrodysplasia punctata type 1 - OMIM:215100
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P035
+    preferred_label: Fetal mesomelia
+    status_note: ready to submit
+    synonyms: []
+    definition: |-
+      Fetal mesomelia is defined as disproportionate shortening of the middle segments of the limbs (radius/ulna and tibia/fibula) relative to the proximal and distal segments. It is assessed on ultrasound by comparing segmental long bone measurements and is characteristic of certain skeletal dysplasias.
+    pmids:
+      - PMID:37675393
+    parent: Abnormal fetal skeletal morphology - HP:0025662
+    disease_associations:
+      - Langer mesomelic dysplasia - OMIM:249700
+      - Ellis-van Creveld syndrome - OMIM:225500
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P036
+    preferred_label: Fetal acromelia
+    status_note: ready to submit
+    synonyms: []
+    definition: |-
+      Fetal acromelia is defined as disproportionate shortening of the distal segments of the limbs (hands and feet) relative to the more proximal segments. On ultrasound, this appears as relatively small hands and feet compared to overall limb length and gestational age.
+    pmids:
+      - PMID:37675393
+    parent: Abnormal fetal skeletal morphology - HP:0025662
+    disease_associations:
+      - Acromelic frontonasal dysostosis - OMIM:603671
+      - Greig cephalopolysyndactyly syndrome - OMIM:175700
+      - Brachydactyly type E - OMIM:113300
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P037
+    preferred_label: Fetal micromelia
+    status_note: ready to submit
+    synonyms: []
+    definition: |-
+      Fetal micromelia is defined as severe, generalized shortening of all segments of the limbs (proximal, middle, and distal) relative to gestational age. It is assessed on ultrasound by markedly reduced long bone measurements across all segments and is often associated with severe skeletal dysplasias.
+    pmids:
+      - PMID:37675393
+    parent: Abnormal fetal skeletal morphology - HP:0025662
+    disease_associations:
+      - Thanatophoric dysplasia type I - OMIM:187600
+      - Thanatophoric dysplasia type II - OMIM:187601
+      - Osteogenesis imperfecta - OMIM:166200
+      - Osteogenesis imperfecta type II - OMIM:166210
+      - Achondrogenesis type IA - OMIM:200600
+      - Achondrogenesis type IB - OMIM:600972
+      - Achondrogenesis type II - OMIM:200610
+      - Campomelic dysplasia - OMIM:114290
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P038
+    preferred_label: Abnormal fetal hands
+    status_note: ready to submit
+    synonyms: []
+    definition: |-
+      Abnormal fetal hands are defined as deviations in the size, shape, position, or digit number of the hands identified on prenatal ultrasound. Findings may include polydactyly, syndactyly, clenched hands, overlapping digits, abnormal positioning, or disproportionately small or large hands for gestational age. Abnormalities may be isolated or associated with chromosomal, genetic, or skeletal disorders.
+    pmids:
+      - PMID:36526543
+    parent: Abnormal fetal skeletal morphology - HP:0025662
+    disease_associations:
+      - Achondroplasia - OMIM:100800
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P039
+    preferred_label: Fetal brachydactyly
+    status_note: ready to submit
+    synonyms:
+      - Fetal trident hands
+    definition: |-
+      Fetal brachydactyly is defined as abnormal shortening of the digits (phalanges), resulting in fingers or toes that are shorter than expected for gestational age. On prenatal ultrasound, it is identified by disproportionately short digits relative to the hand or foot, often with otherwise normal long bone lengths.
+    pmids:
+      - PMID:36526543
+    parent: Abnormal fetal hands
+    disease_associations:
+      - Achondroplasia - OMIM:100800
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P040
+    preferred_label: Fetal hitchhiker thumbs
+    status_note: ready for submit
+    synonyms: []
+    definition: |-
+      Fetal hitchhiker thumbs are defined as abnormally positioned thumbs that are persistently held in a hyperextended and abducted posture on prenatal ultrasound. This finding is assessed in real-time imaging and is characterized by limited flexion and a fixed, exaggerated extension of the thumb relative to the palm. It is classically associated with diastrophic dysplasia and related skeletal dysplasias.
+    pmids:
+      - PMID:12901408
+    parent: Abnormal fetal hands
+    disease_associations:
+      - Diastrophic dysplasia - OMIM:222600
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: Collaborator label had duplicate word: Fetal fetal hitchhiker thumbs.
+  - id: P041
+    preferred_label: Fetal temporal lobe malformation
+    status_note: ready to submit
+    synonyms:
+      - Fetal temporal lobe dysgenesis
+      - fetal temporal lobe abnormal folding
+      - fetal abnormal temporal lobe gyration
+    definition: |-
+      Fetal temporal lobe malformation is defined as abnormal development, structure, or organization of the temporal lobes identified on prenatal imaging. It is assessed on ultrasound or fetal MRI, where findings may include asymmetry, abnormal size or contour, disrupted sulcation, or atypical signal characteristics. These abnormalities reflect altered cortical development and may be associated with genetic conditions, brain malformations, or neurodevelopmental disorders.
+    pmids:
+      - PMID:24616001
+      - PMID:29170271
+    parent: Abnormal fetal central nervous system morphology - HP:0034206
+    disease_associations:
+      - Achondroplasia - OMIM:100800
+      - Hypochondroplasia - OMIM:146000
+      - Thanatophoric dysplasia type I - OMIM:187600
+      - Thanatophoric dysplasia type II - OMIM:187601
+      - Muenke syndrome - OMIM:602849
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: ""
+  - id: P042
+    preferred_label: Fetal long bone fractures
+    status_note: Listed in high-level proposed qualitative terms; detailed source fields not provided
+    synonyms: []
+    definition: ""
+    pmids: []
+    parent: Abnormal fetal skeletal morphology - HP:0025662
+    disease_associations: []
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: This term was listed in the high-level proposed qualitative terms, but the source notes did not provide a detailed definition, PMIDs, parent review, or disease associations.
+  - id: P043
+    preferred_label: Fetal metaphyseal irregularity
+    status_note: Listed in high-level proposed qualitative terms; detailed source fields not provided
+    synonyms: []
+    definition: ""
+    pmids: []
+    parent: Fetal long bone metaphyseal abnormality
+    disease_associations: []
+    nano_attribution: https://orcid.org/0000-0002-5177-8109
+    notes: This term was listed in the high-level proposed qualitative terms, but the source notes did not provide a detailed definition, PMIDs, parent review, or disease associations.
