@@ -1,0 +1,1046 @@
+function hpo_questionnaire() {
+	var form = FormApp.create('Prenatal skeletal HPO term review part 1');
+	form.setDescription('Review one proposed HPO term per page. Term review grids are optional so you can skip unfamiliar terms, browse the full form, and return before submission. Please provide your name and email for response tracking.');
+form.addTextItem()
+    .setTitle('Name:')
+    .setRequired(true);
+var emailValidation = FormApp.createTextValidation()
+     .requireTextMatchesPattern('[^@\\s]+@[^@\\s]+\\.[^@\\s]+')
+     .setHelpText('Please enter a valid email address')
+     .build();
+form.addTextItem()
+     .setTitle('Email address:')
+     .setRequired(true)
+     .setValidation(emailValidation);
+
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P001] Abnormal fetal estimated fetal weight')
+        .setHelpText('Status:\nALREADY EXISTS; HP:0001511\n\nSynonyms:\nFGR, Fetal growth restriction, IUGR, Intrauterine growth restriction, Prenatal growth deficiency, Small for gestational age infant\n\nProposed parent:\nNone\n\nPMIDs:\nNone');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('An abnormal restriction of fetal growth with fetal weight below the tenth percentile for gestational age.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P001] Abnormal fetal estimated fetal weight')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P001] Abnormal fetal estimated fetal weight');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P001] Abnormal fetal estimated fetal weight')
+        .setHelpText('Disease associations:\nNone\n\nNotes:\nExisting HPO term at https://hpo.jax.org/browse/term/HP:0001511.');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P002] Abnormal fetal thoracic circumference');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P002] Abnormal fetal thoracic circumference')
+        .setHelpText('Status:\nReady to SUBMIT\n\nSynonyms:\nAbnormal fetal TC, decreased TC\n\nProposed parent:\nAbnormal fetal morphology - HP:0034058\nAbnormal fetal skeletal morphology - HP:0025662\n\nPMIDs:\nPMID:3555087, PMID:10419608');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('An abnormal (reduced) fetal thoracic circumference is defined as a measurement below the 2.5th or 5th percentile for gestational age. The thoracic circumference is assessed on a transverse (axial) view of the fetal thorax at the level of the four-chamber cardiac view. This is performed by obtaining a true axial plane in which the four cardiac chambers are clearly visualized, with the spine posteriorly and the ribs seen circumferentially, typically just above the diaphragm where the heart occupies approximately one-third of the thoracic area. The outer contour of the chest wall (skin line) is then traced to obtain the circumference measurement.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P002] Abnormal fetal thoracic circumference')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P002] Abnormal fetal thoracic circumference');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P002] Abnormal fetal thoracic circumference')
+        .setHelpText('Disease associations:\n- Thanatophoric dysplasia type I - OMIM:187600\n- Thanatophoric dysplasia type II - OMIM:187601\n- Short-rib thoracic dysplasia (Jeune syndrome) - OMIM:208500\n- Short-rib polydactyly syndrome type I (Saldino-Noonan) - OMIM:263530\n- Short-rib polydactyly syndrome type II (Majewski) - OMIM:263520\n- Short-rib polydactyly syndrome type III (Verma-Naumoff) - OMIM:263510\n- Short-rib polydactyly syndrome type IV (Beemer-Langer) - OMIM:269860\n- Achondrogenesis type IA - OMIM:200600\n- Achondrogenesis type IB - OMIM:600972\n- Achondrogenesis type II / Hypochondrogenesis - OMIM:200610\n- Osteogenesis imperfecta type II - OMIM:166210\n- Campomelic dysplasia - OMIM:114290\n- Hypophosphatasia (perinatal lethal) - OMIM:241500\n- Achondroplasia - OMIM:100800\n- Homozygous achondroplasia - OMIM:201250\n- Ellis-van Creveld syndrome - OMIM:225500\n- Spondylothoracic dysostosis - OMIM:277300\n- Spondylocostal dysostosis - OMIM:608681\n- Shwachman-Diamond syndrome - OMIM:260400\n- Bilateral renal agenesis (Potter sequence) - OMIM:191830\n- Autosomal recessive polycystic kidney disease - OMIM:263200\n- Congenital diaphragmatic hernia - OMIM:142340\n- Congenital diaphragmatic hernia (syndromic forms) - OMIM:222400\n- Nonimmune hydrops fetalis - OMIM:236750\n- Fetal akinesia deformation sequence (Pena-Shokeir) - OMIM:208150\n- Myotonic dystrophy type 1 - OMIM:160900\n- Spinal muscular atrophy - OMIM:253300\n- Nemaline myopathy - OMIM:161800\n- X-linked myotubular myopathy - OMIM:310400\n- Trisomy 18 (Edwards syndrome) - OMIM:614748\n- Trisomy 13 (Patau syndrome) - OMIM:613793\n- Trisomy 21 (Down syndrome) - OMIM:190685\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P003] Abnormal fetal humerus length');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P003] Abnormal fetal humerus length')
+        .setHelpText('Status:\nExisting term: short fetal humerus length; HP:0011429\n\nSynonyms:\nAbnormal fetal HL\n\nProposed parent:\nNone\n\nPMIDs:\nPMID:16100637');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('A short humerus length is defined as a length below the 2.5th percentile for gestational age or as a measurement less than 0.9 of that predicted by the measured biparietal diameter. The humerus should be measured with the bone perpendicular to the ultrasound beam and with epiphyseal cartilages visible but not included in the measurement.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P003] Abnormal fetal humerus length')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P003] Abnormal fetal humerus length');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P003] Abnormal fetal humerus length')
+        .setHelpText('Disease associations:\n- Trisomy 21 (Down syndrome) - OMIM:190685\n- Trisomy 18 (Edwards syndrome) - OMIM:614748\n- Trisomy 13 (Patau syndrome) - OMIM:613793\n- Achondroplasia - OMIM:100800\n- Thanatophoric dysplasia type I - OMIM:187600\n- Thanatophoric dysplasia type II - OMIM:187601\n- Osteogenesis imperfecta type II - OMIM:166210\n- Achondrogenesis type IA - OMIM:200600\n- Achondrogenesis type IB - OMIM:600972\n- Achondrogenesis type II / Hypochondrogenesis - OMIM:200610\n- 3-M syndrome - OMIM:273750\n- Campomelic dysplasia - OMIM:114290\n- Chondrodysplasia punctata (rhizomelic type 1) - OMIM:215100\n- Diastrophic dysplasia - OMIM:222600\n\nNotes:\nReady to add disease associations as an addendum.');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P004] Abnormal fetal scapula length');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P004] Abnormal fetal scapula length')
+        .setHelpText('Status:\nREADY TO SUBMIT\n\nSynonyms:\nAbnormal fetal scapula, hypoplastic fetal scapula\n\nProposed parent:\nAbnormal fetal skeletal morphology\n\nPMIDs:\nPMID:2695411, PMID:7933014');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('An abnormal (short) scapula length is defined as a measurement below the 5th percentile for gestational age or as a value greater than or equal to 3 standard deviations below the mean. The scapula is assessed by measuring the maximal distance from the acromion to the inferior angle. This is performed by first identifying the fetal spine in a longitudinal plane, then sweeping the transducer parallel and laterally, with gentle angulation as needed, until both landmarks are clearly visualized. Digital sonographic calipers are then placed at the acromion and inferior angle to obtain the measurement.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P004] Abnormal fetal scapula length')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P004] Abnormal fetal scapula length');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P004] Abnormal fetal scapula length')
+        .setHelpText('Disease associations:\n- Campomelic dysplasia - OMIM:114290\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P005] Abnormal fetal clavicle length');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P005] Abnormal fetal clavicle length')
+        .setHelpText('Status:\nREADY TO SUBMIT\n\nSynonyms:\nAbnormal fetal clavicle length, hypoplastic fetal clavicle\n\nProposed parent:\nAbnormal fetal skeletal morphology\n\nPMIDs:\nPMID:3903198, PMID:16450360');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('An abnormal (short) clavicle length is defined as a measurement below the 5th percentile for gestational age or as a value greater than or equal to 3 standard deviations below the mean. The clavicle is assessed by measuring the maximal distance between its medial and lateral ends. This is performed by obtaining an axial sonographic view just cephalad to the level of the thoracic inlet, where the clavicular curvature and configuration are clearly visualized. Calipers are then placed at the medial and lateral aspects of the clavicle to obtain the measurement.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P005] Abnormal fetal clavicle length')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P005] Abnormal fetal clavicle length');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P005] Abnormal fetal clavicle length')
+        .setHelpText('Disease associations:\n- Cleidocranial dysplasia - OMIM:119600\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P006] Abnormal fetal lung volume');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P006] Abnormal fetal lung volume')
+        .setHelpText('Status:\nREADY TO SUBMIT\n\nSynonyms:\nAbnormal fetal FLV\n\nProposed parent:\nAbnormal fetal pulmonary morphology - HP:0034243\n\nPMIDs:\nNone');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('An abnormal fetal lung volume is defined as sonographic and/or fetal MRI evidence that total fetal lung volume is outside the expected range for gestational age, including either decreased lung volume (pulmonary hypoplasia) or increased lung volume (pulmonary enlargement) as determined by specific biometric measurements or other validated imaging criteria.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P006] Abnormal fetal lung volume')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P006] Abnormal fetal lung volume');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P006] Abnormal fetal lung volume')
+        .setHelpText('Disease associations:\nNone\n\nNotes:\nChild terms: Enlarged fetal lungs (HP:6000613); Decreased fetal lung volume (separate HPO term).');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P007] Decreased fetal lung volume');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P007] Decreased fetal lung volume')
+        .setHelpText('Status:\nREADY TO SUBMIT\n\nSynonyms:\nDecreased fetal FLV\n\nProposed parent:\nAbnormal fetal lung volume\n\nPMIDs:\nPMID:25102973, PMID:10419608, PMID:8765272, PMID:20582919, PMID:15459321');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('A decreased fetal lung volume is defined as a value below the 5th percentile for gestational age or estimated fetal weight, or greater than or equal to 2 standard deviations below the mean, as measured by three-dimensional (3D) ultrasound or fetal MRI methods, and may be observed across a range of fetal conditions associated with pulmonary hypoplasia, including those that restrict thoracic capacity (e.g. skeletal dysplasias), cause intrathoracic mass effect (e.g. congenital diaphragmatic hernia), reduce amniotic fluid (e.g. Potter sequence or renal dysfunction), impair fetal breathing, or disrupt primary lung development. On ultrasound, fetal lung volume is typically assessed using 3D techniques--either a multiplanar summation-of-areas approach or the rotational VOCAL method--where each lung is measured separately by tracing boundaries across sequential slices, excluding mediastinal structures. When ultrasound assessment is equivocal, fetal MRI may be used to improve prognostication, with lung volume calculated from sequential single-shot fast spin-echo (SSFSE) T2-weighted images in the coronal plane by outlining the lungs across contiguous slices to generate total volume.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P007] Decreased fetal lung volume')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P007] Decreased fetal lung volume');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P007] Decreased fetal lung volume')
+        .setHelpText('Disease associations:\n- Hydrops fetalis, nonimmune - OMIM:236750\n- Trisomy 13 (Patau syndrome) - OMIM:613793\n- Trisomy 18 (Edwards syndrome) - OMIM:614748\n- Myotonic dystrophy type 1 (DM1) - OMIM:160900\n- Spinal muscular atrophy (SMA type 0/1) - OMIM:253300\n- Congenital muscular dystrophies (e.g., LAMA2-related) - OMIM:607855\n- Fetal akinesia deformation sequence (Pena-Shokeir) - OMIM:208150\n- Anencephaly - OMIM:206500\n- Bilateral renal agenesis (Potter sequence) - OMIM:191830\n- Autosomal recessive polycystic kidney disease (ARPKD) - OMIM:263200\n- Congenital diaphragmatic hernia - OMIM:142340, OMIM:222400\n- Thanatophoric dysplasia (types I & II) - OMIM:187600, OMIM:187601\n- Osteogenesis imperfecta type II - OMIM:166210\n- Achondrogenesis type IA - OMIM:200600\n- Achondrogenesis type IB - OMIM:600972\n- Achondrogenesis type II (Langer-Saldino) - OMIM:200610\n- Hypochondrogenesis - OMIM:200610\n- Asphyxiating thoracic dystrophy (Jeune syndrome) - OMIM:208500\n- Campomelic dysplasia - OMIM:114290\n- Short-rib polydactyly syndrome type I (Saldino-Noonan) - OMIM:263530\n- Short-rib polydactyly syndrome type II (Majewski) - OMIM:263520\n- Short-rib polydactyly syndrome type III (Verma-Naumoff) - OMIM:263510\n- Short-rib polydactyly syndrome type IV (Beemer-Langer) - OMIM:269860\n- Platyspondylic lethal skeletal dysplasia, Torrance type - OMIM:151210\n- Hypophosphatasia (perinatal lethal form) - OMIM:241500\n- Ellis-van Creveld syndrome - OMIM:225500\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P008] Decreased fetal femur length:abdominal circumference ratio');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P008] Decreased fetal femur length:abdominal circumference ratio')
+        .setHelpText('Status:\nREADY TO SUBMIT\n\nSynonyms:\nDecreased fetal FL:AC ratio\n\nProposed parent:\nAbnormal fetal skeletal morphology - HP:0025662\n\nPMIDs:\nPMID:9369835, PMID:39078648');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('An abnormal (decreased) fetal femur length-to-abdominal circumference (FL/AC) ratio is defined as a value less than 0.16, which is concerning for a life-limiting skeletal dysplasia. The femur length is measured from the outer border of one end of the ossified femoral diaphysis to the other, excluding the epiphyses and artifact, while the abdominal circumference is obtained in a transverse view by tracing the outer skin line at the level where the stomach, umbilical vein, and portal sinus are visualized. The FL/AC ratio reflects the degree of limb shortening relative to fetal size and has been shown to be one of the best-performing predictors of lethality, outperforming femur length alone and other proportional indices; however, it reflects severity rather than diagnosis.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P008] Decreased fetal femur length:abdominal circumference ratio')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P008] Decreased fetal femur length:abdominal circumference ratio');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P008] Decreased fetal femur length:abdominal circumference ratio')
+        .setHelpText('Disease associations:\n- Thanatophoric dysplasia type I - OMIM:187600\n- Thanatophoric dysplasia type II - OMIM:187601\n- Achondrogenesis type IA - OMIM:200600\n- Achondrogenesis type IB - OMIM:600972\n- Achondrogenesis type II / Hypochondrogenesis - OMIM:200610\n- Osteogenesis imperfecta type II - OMIM:166210\n- Short-rib thoracic dysplasia - OMIM:208500\n- Short-rib polydactyly syndrome type I (Saldino-Noonan) - OMIM:263530\n- Short-rib polydactyly syndrome type II (Majewski) - OMIM:263520\n- Short-rib polydactyly syndrome type III (Verma-Naumoff) - OMIM:263510\n- Short-rib polydactyly syndrome type IV (Beemer-Langer) - OMIM:269860\n- Campomelic dysplasia - OMIM:114290\n- Homozygous achondroplasia - OMIM:100800\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P009] Reduced fetal femur/foot length ratio');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P009] Reduced fetal femur/foot length ratio')
+        .setHelpText('Status:\nAlready exists as Reduced fetal femur/foot length ratio; HP:0025663\n\nSynonyms:\nDecreased fetal femur:foot ratio\n\nProposed parent:\nNone\n\nPMIDs:\nPMID:36575575');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('This ratio relates the length of the fetal femur to that of the fetal foot. The ratio is approximately 1 throughout the age range of 14 to 40 weeks of gestation. A substantial reduction in the ratio can help differentiate fetuses that have dysplastic limb reduction from those whose limbs are short because of constitutional factors or IUGR. It can reduce the problem of an unknown gestational age and help to distinguish between fetal skeletal dysplasia and intrauterine growth retardation caused by other factors.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P009] Reduced fetal femur/foot length ratio')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P009] Reduced fetal femur/foot length ratio');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P009] Reduced fetal femur/foot length ratio')
+        .setHelpText('Disease associations:\nNone\n\nNotes:\nAddendum to existing term: A ratio <0.89 is concerning for a more severe or potentially life-limiting skeletal dysplasia. PMID:36575575');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P010] Champagne Cork Sign');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P010] Champagne Cork Sign')
+        .setHelpText('Status:\nALREADY EXISTS; HP:0034226\n\nSynonyms:\nNone\n\nProposed parent:\nDecreased fetal thoracic circumference:abdominal circumference ratio\n\nPMIDs:\nNone');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Characteristic appearance of the chest and abdomen in the sagittal view on prenatal ultrasound when the chest is small and the abdomen protruding.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P010] Champagne Cork Sign')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P010] Champagne Cork Sign');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P010] Champagne Cork Sign')
+        .setHelpText('Disease associations:\nNone\n\nNotes:\nExisting HPO term at https://hpo.jax.org/browse/term/HP:0034226. Listed as a child term under decreased fetal thoracic circumference:abdominal circumference ratio in the source notes.');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P011] Decreased fetal femur length:biparietal diameter ratio');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P011] Decreased fetal femur length:biparietal diameter ratio')
+        .setHelpText('Status:\nREADY TO SUBMIT\n\nSynonyms:\nDecreased fetal FL:BPD ratio\n\nProposed parent:\nAbnormal fetal skeletal morphology - HP:0025662\n\nPMIDs:\nPMID:36575575');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('An abnormal (decreased) fetal femur length-to-biparietal diameter (FL/BPD) ratio is defined as a value less than 0.376, which is associated with a significantly increased likelihood of skeletal dysplasia. The femur length is measured from the outer border of one end of the ossified femoral diaphysis to the other, excluding the epiphyses and artifact, while the biparietal diameter is measured on ultrasound at the level of the thalami and cavum septi pellucidi, using an outer-to-inner technique. This ratio reflects limb shortening relative to head size and serves as a screening marker for skeletal dysplasia.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P011] Decreased fetal femur length:biparietal diameter ratio')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P011] Decreased fetal femur length:biparietal diameter ratio');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P011] Decreased fetal femur length:biparietal diameter ratio')
+        .setHelpText('Disease associations:\nNone\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P012] Decreased fetal thoracic circumference:abdominal circumference ratio');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P012] Decreased fetal thoracic circumference:abdominal circumference ratio')
+        .setHelpText('Status:\nREADY TO SUBMIT\n\nSynonyms:\nDecreased fetal TC:AC ratio\n\nProposed parent:\nAbnormal fetal skeletal morphology\n\nPMIDs:\nPMID:39078648');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('An abnormal (decreased) fetal thoracic circumference-to-abdominal circumference (TC/AC) ratio is defined as a value less than 0.6, which is concerning for a disproportionately narrow thorax. The thoracic circumference is measured on ultrasound in a transverse view at the level of the four-chamber cardiac view by tracing the outer skin line of the chest wall, while the abdominal circumference is obtained in a transverse plane at the level of the stomach, umbilical vein, and portal sinus, also using the outer skin line. This ratio reflects thoracic size relative to overall fetal size, with decreased values indicating severe thoracic restriction, which can be associated with severe and life-limiting skeletal dysplasias.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P012] Decreased fetal thoracic circumference:abdominal circumference ratio')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P012] Decreased fetal thoracic circumference:abdominal circumference ratio');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P012] Decreased fetal thoracic circumference:abdominal circumference ratio')
+        .setHelpText('Disease associations:\n- Thanatophoric dysplasia type I - OMIM:187600\n- Thanatophoric dysplasia type II - OMIM:187601\n- Achondrogenesis type IA - OMIM:200600\n- Achondrogenesis type IB - OMIM:600972\n- Achondrogenesis type II / Hypochondrogenesis - OMIM:200610\n- Osteogenesis imperfecta type II - OMIM:166210\n- Short-rib thoracic dysplasia - OMIM:208500\n- Short-rib polydactyly syndrome type I (Saldino-Noonan) - OMIM:263530\n- Short-rib polydactyly syndrome type II (Majewski) - OMIM:263520\n- Short-rib polydactyly syndrome type III (Verma-Naumoff) - OMIM:263510\n- Short-rib polydactyly syndrome type IV (Beemer-Langer) - OMIM:269860\n\nNotes:\nChild term suggested: Champagne Cork Sign - HP:0034226.');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P013] Abnormal fetal cardiac circumference: thoracic circumference ratio');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P013] Abnormal fetal cardiac circumference: thoracic circumference ratio')
+        .setHelpText('Status:\nREADY TO SUBMIT\n\nSynonyms:\nAbnormal fetal cardiothoracic ratio, increased fetal C/T ratio\n\nProposed parent:\nAbnormal fetal morphology\n\nPMIDs:\nPMID:34647342');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('An abnormal (increased) fetal cardiothoracic (C/T) ratio is defined as a C/T circumference ratio greater than or equal to 0.50. The C/T ratio is measured on ultrasound using a transverse image of the fetal chest at the level of the four-chamber view during diastole, by assessing cardiac size relative to the thorax, which should appear symmetric and near-circular with the spine at approximately 6 or 12 o\'clock and the heart occupying about one-third of the thoracic area.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P013] Abnormal fetal cardiac circumference: thoracic circumference ratio')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P013] Abnormal fetal cardiac circumference: thoracic circumference ratio');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P013] Abnormal fetal cardiac circumference: thoracic circumference ratio')
+        .setHelpText('Disease associations:\n- Ebstein anomaly - OMIM:224700\n- Short-rib thoracic dysplasia - OMIM:208500\n- Thanatophoric dysplasia - OMIM:187600, OMIM:187601\n- Osteogenesis imperfecta type II - OMIM:166210\n- Congenital diaphragmatic hernia - OMIM:142340\n- Cardiac rhabdomyoma - OMIM:191100\n- Tuberous sclerosis complex - OMIM:191100, OMIM:613254\n\nNotes:\nCollaborator was not sure whether this lives under skeletal, cardiac, or pulmonary.');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P014] Fetal frontal bossing');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P014] Fetal frontal bossing')
+        .setHelpText('Status:\nREADY TO SUBMIT\n\nSynonyms:\nNone\n\nProposed parent:\nFetal head anomaly - HP:0034245\n\nPMIDs:\nPMID:9315184');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal frontal bossing is defined as abnormal prominence or protrusion of the frontal bone, assessed on the midsagittal profile view of the fetal face on ultrasound. It is typically identified by subjective evaluation on 2D ultrasound, characterized by an exaggerated convexity or bulging of the frontal contour relative to the expected fetal profile.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P014] Fetal frontal bossing')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P014] Fetal frontal bossing');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P014] Fetal frontal bossing')
+        .setHelpText('Disease associations:\n- Achondroplasia - OMIM:100800\n- Hypochondroplasia - OMIM:146000\n- Thanatophoric dysplasia type I - OMIM:187600\n- Thanatophoric dysplasia type II - OMIM:187601\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P015] Fetal craniosynostosis');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P015] Fetal craniosynostosis')
+        .setHelpText('Status:\nReady to Submit\n\nSynonyms:\nNone\n\nProposed parent:\nFetal head anomaly - HP:0034245\n\nPMIDs:\nPMID:35998125');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal craniosynostosis is defined as the premature fusion of one or more cranial sutures in utero, resulting in abnormal skull growth and head shape. It is assessed on prenatal ultrasound by evaluating the contour of the fetal skull and sutures, with findings that may include abnormal head shape.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P015] Fetal craniosynostosis')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P015] Fetal craniosynostosis');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P015] Fetal craniosynostosis')
+        .setHelpText('Disease associations:\n- Thanatophoric dysplasia type II - OMIM:187601\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P016] Fetal brachycephaly');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P016] Fetal brachycephaly')
+        .setHelpText('Status:\nReady to Submit\n\nSynonyms:\nNone\n\nProposed parent:\nFetal craniosynostosis\n\nPMIDs:\nPMID:2677864, PMID:11772173');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal brachycephaly is defined as an abnormally rounded or shortened skull shape in which the biparietal diameter is disproportionately increased relative to the occipitofrontal diameter, resulting in an elevated cephalic index. The cephalic index is calculated as BPD/OFD multiplied by 100 and is assessed on ultrasound in an axial plane of the fetal head at the level of the thalami and cavum septi pellucidi. Brachycephaly is typically defined as a cephalic index greater than or equal to 83-85, with gestational age-specific norms applied. This finding may represent a normal variant but can also be associated with craniosynostosis, particularly bicoronal synostosis, chromosomal abnormalities such as trisomy 21, skeletal dysplasias, or extrinsic compressive forces.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P016] Fetal brachycephaly')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P016] Fetal brachycephaly');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P016] Fetal brachycephaly')
+        .setHelpText('Disease associations:\n- Muenke syndrome - OMIM:602849\n- Saethre-Chotzen syndrome - OMIM:101400\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P017] Fetal dolichocephaly');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P017] Fetal dolichocephaly')
+        .setHelpText('Status:\nReady to Submit\n\nSynonyms:\nNone\n\nProposed parent:\nFetal craniosynostosis\n\nPMIDs:\nPMID:6787895');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal dolichocephaly is defined as an elongated skull shape in which the occipitofrontal diameter is disproportionately increased relative to the biparietal diameter, resulting in a decreased cephalic index less than 74. The cephalic index is calculated as BPD/OFD multiplied by 100 on an axial ultrasound view at the level of the thalami and cavum septi pellucidi. It is most commonly due to positional factors with patent sutures and absence of frontal bossing.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P017] Fetal dolichocephaly')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P017] Fetal dolichocephaly');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P017] Fetal dolichocephaly')
+        .setHelpText('Disease associations:\nNone\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P018] Fetal trigonocephaly');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P018] Fetal trigonocephaly')
+        .setHelpText('Status:\nAlready Exists; HP:4000142\n\nSynonyms:\nNone\n\nProposed parent:\nFetal skeletal abnormality\n\nPMIDs:\nNone');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('A fetal ultrasound finding defined by flattening of the occiput with pointing of the frontal bones and brachycephaly with an increased cephalic index. It is characterized by keel shaped deformity of forehead with midline ridge, bilateral fronto temporal constriction with compensatory biparietal expansion, supra orbital and lateral orbital retrusion and hypotelorism. This finding is said to resemble a strawberry.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P018] Fetal trigonocephaly')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P018] Fetal trigonocephaly');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P018] Fetal trigonocephaly')
+        .setHelpText('Disease associations:\n- Hypophosphatasia - OMIM:241500\n- Osteoglophonic dysplasia - OMIM:166250\n- Campomelic dysplasia - OMIM:114290\n\nNotes:\nExisting term has no disease associations; collaborator proposes adding listed associations.');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P019] Fetal scaphocephaly');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P019] Fetal scaphocephaly')
+        .setHelpText('Status:\nReady to Submit\n\nSynonyms:\nNone\n\nProposed parent:\nFetal craniosynostosis\n\nPMIDs:\nPMID:28553772, PMID:32868470');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal scaphocephaly is defined as an elongated, narrow skull shape caused by premature fusion of the sagittal suture. It is characterized by anteroposterior elongation with biparietal narrowing, resulting in a decreased cephalic index, and is assessed on ultrasound in axial and sagittal views of the fetal head. Unlike dolichocephaly, cranial sutures are fused rather than patent, and frontal and occipital bossing are often present and may become more pronounced over time.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P019] Fetal scaphocephaly')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P019] Fetal scaphocephaly');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P019] Fetal scaphocephaly')
+        .setHelpText('Disease associations:\n- Thanatophoric dysplasia type II - OMIM:187601\n- Antley-Bixler syndrome - OMIM:207410\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P020] Fetal cloverleaf skull');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P020] Fetal cloverleaf skull')
+        .setHelpText('Status:\nReady to Submit\n\nSynonyms:\nFetal kleeblattschadel\n\nProposed parent:\nFetal craniosynostosis\n\nPMIDs:\nPMID:7346817');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal cloverleaf skull (Kleeblattschadel) is defined as a severe form of multisuture craniosynostosis resulting in a characteristic trilobar skull shape. It is caused by premature fusion of multiple cranial sutures, most commonly the coronal and lambdoid sutures, with compensatory expansion through remaining patent regions. On prenatal ultrasound, it is identified by a distinctive trilobed cranial contour on axial views, with three bulging regions (two temporal and one frontal/superior), often accompanied by turricephaly, abnormal head biometry, ventriculomegaly, and marked proptosis. This finding reflects severe disruption of normal skull growth and is associated with significant morbidity.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P020] Fetal cloverleaf skull')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P020] Fetal cloverleaf skull');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P020] Fetal cloverleaf skull')
+        .setHelpText('Disease associations:\n- Thanatophoric dysplasia type II - OMIM:187601\n- Pfeiffer syndrome - OMIM:101600\n- Crouzon syndrome - OMIM:123500\n- Apert syndrome - OMIM:101200\n- Carpenter syndrome - OMIM:201000\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P021] Abnormal fetal ribs');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P021] Abnormal fetal ribs')
+        .setHelpText('Status:\nReady to submit\n\nSynonyms:\nNone\n\nProposed parent:\nAbnormal fetal skeletal morphology - HP:0025662\n\nPMIDs:\nPMID:40952954');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Abnormal fetal ribs are defined as deviations in the number, size, shape, or configuration of the ribs identified on prenatal ultrasound. These abnormalities may include shortened ribs, absent or supernumerary ribs, irregular contour, fractures, or abnormal spacing. The ribs are assessed on axial and coronal views of the fetal thorax, where they should appear as symmetric, evenly spaced echogenic arcs encircling the chest. Abnormal rib findings often reflect underlying skeletal dysplasias or thoracic restriction and may contribute to a small thoracic cage and risk of pulmonary hypoplasia.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P021] Abnormal fetal ribs')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P021] Abnormal fetal ribs');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P021] Abnormal fetal ribs')
+        .setHelpText('Disease associations:\nNone\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P022] Decreased fetal rib length');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P022] Decreased fetal rib length')
+        .setHelpText('Status:\nReady to submit\n\nSynonyms:\nShort fetal ribs\n\nProposed parent:\nAbnormal fetal ribs\n\nPMIDs:\nPMID:8705412');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Decreased fetal rib length is defined as ribs that are shorter than expected for gestational age, typically below the 5th percentile or associated with a disproportionately small thorax. It is assessed on ultrasound in axial views of the chest, though surrogate measures such as thoracic circumference are often used. This finding is a key marker of skeletal dysplasia and is associated with pulmonary hypoplasia and increased risk of perinatal lethality.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P022] Decreased fetal rib length')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P022] Decreased fetal rib length');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P022] Decreased fetal rib length')
+        .setHelpText('Disease associations:\n- Short-rib thoracic dysplasia (Jeune syndrome) - OMIM:208500\n- Ellis-van Creveld syndrome - OMIM:225500\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P023] Fetal rib fractures');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P023] Fetal rib fractures')
+        .setHelpText('Status:\nReady to submit\n\nSynonyms:\nFetal rib beading\n\nProposed parent:\nAbnormal fetal ribs\n\nPMIDs:\nPMID:3293447');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal rib fractures are defined as disruptions of the normal continuity of the rib cortex identified on prenatal ultrasound. They appear as discontinuities, angulations, or areas of callus formation along the rib shafts. Rib beading refers to a related finding characterized by a rosary bead or string of pearls appearance, reflecting multiple healing fractures or callus formation at regular intervals. These findings are most commonly associated with disorders of bone fragility, such as osteogenesis imperfecta.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P023] Fetal rib fractures')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P023] Fetal rib fractures');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P023] Fetal rib fractures')
+        .setHelpText('Disease associations:\n- Osteogenesis imperfecta - OMIM:166200\n- Osteogenesis imperfecta type II - OMIM:166210\n- Achondrogenesis type IA - OMIM:200600\n- Achondrogenesis type IB - OMIM:600972\n- Achondrogenesis type II - OMIM:200610\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P024] Abnormal fetal spine');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P024] Abnormal fetal spine')
+        .setHelpText('Status:\nReady to submit\n\nSynonyms:\nNone\n\nProposed parent:\nAbnormal fetal skeletal morphology - HP:0025662\n\nPMIDs:\nPMID:34723699');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Abnormal fetal spine is defined as any deviation in the alignment, segmentation, curvature, or integrity of the vertebral column identified on prenatal ultrasound. It is assessed in sagittal, coronal, and axial planes, where the spine should appear as a continuous, evenly spaced series of ossification centers with normal curvature.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P024] Abnormal fetal spine')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P024] Abnormal fetal spine');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P024] Abnormal fetal spine')
+        .setHelpText('Disease associations:\nNone\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P025] Fetal platyspondyly');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P025] Fetal platyspondyly')
+        .setHelpText('Status:\nReady to Submit\n\nSynonyms:\nFetal flattened spinal body\n\nProposed parent:\nAbnormal fetal spine\n\nPMIDs:\nPMID:2403680');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal platyspondyly is defined as flattening of the vertebral bodies, in which vertebral body height is reduced relative to the adjacent intervertebral disc space, resulting in a decreased vertebral body height-to-interspace ratio. It is assessed on prenatal ultrasound in a sagittal view of the spine by comparing the height of the vertebral ossification centers to the intervertebral spaces.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P025] Fetal platyspondyly')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P025] Fetal platyspondyly');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P025] Fetal platyspondyly')
+        .setHelpText('Disease associations:\n- Spondyloepiphyseal dysplasia congenita - OMIM:183900\n- Kniest dysplasia - OMIM:156550\n- Achondroplasia - OMIM:100800\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P026] Fetal bullet shaped spine');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P026] Fetal bullet shaped spine')
+        .setHelpText('Status:\nReady to Submit\n\nSynonyms:\nFetal anterior wedging of spine\n\nProposed parent:\nAbnormal fetal spine\n\nPMIDs:\nPMID:2403680');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal bullet-shaped vertebrae are defined as vertebral bodies with anterior rounding and posterior concavity, creating a characteristic bullet-like profile on lateral view. This morphology is most classically associated with achondroplasia and other FGFR3-related skeletal dysplasias. On prenatal ultrasound, the finding is typically inferred on sagittal views as mild platyspondyly with abnormal vertebral body contour, though it is more clearly appreciated on postnatal radiographs.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P026] Fetal bullet shaped spine')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P026] Fetal bullet shaped spine');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P026] Fetal bullet shaped spine')
+        .setHelpText('Disease associations:\n- Achondroplasia - OMIM:100800\n- Thanatophoric dysplasia type I - OMIM:187600\n- Thanatophoric dysplasia type II - OMIM:187601\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P027] Fetal hemivertebrae');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P027] Fetal hemivertebrae')
+        .setHelpText('Status:\nready to submit\n\nSynonyms:\nNone\n\nProposed parent:\nAbnormal fetal spine\n\nPMIDs:\nPMID:39978942, PMID:15692206');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal hemivertebrae are congenital vertebral anomalies caused by unilateral failure of vertebral body formation, resulting in a wedge-shaped vertebra. On ultrasound, they are identified by focal spinal angulation or scoliosis on coronal view, disruption of normal alignment on sagittal view, and asymmetric or absent ossification centers on axial view.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P027] Fetal hemivertebrae')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P027] Fetal hemivertebrae');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P027] Fetal hemivertebrae')
+        .setHelpText('Disease associations:\n- Spondylocostal dysostosis - OMIM:277300\n- Klippel-Feil syndrome - OMIM:118100\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P028] Fetal long bone bowing');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P028] Fetal long bone bowing')
+        .setHelpText('Status:\nready to submit\n\nSynonyms:\nFetal bone bowing\n\nProposed parent:\nAbnormal fetal skeletal morphology - HP:0025662\n\nPMIDs:\nPMID:17486589');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Long bone bowing is defined as abnormal curvature or angulation of the diaphysis of one or more long bones, most commonly the femur and tibia. It is assessed on prenatal ultrasound in sagittal views, where the long bones should appear straight and symmetric bilaterally. Evaluation of the extremities should include assessment for bowing, fractures, ossification, and symmetry.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P028] Fetal long bone bowing')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P028] Fetal long bone bowing');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P028] Fetal long bone bowing')
+        .setHelpText('Disease associations:\n- Achondroplasia - OMIM:100800\n- Thanatophoric dysplasia type I - OMIM:187600\n- Campomelic dysplasia - OMIM:114290\n- Osteogenesis imperfecta - OMIM:166200\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P029] Fetal long bone epiphyseal abnormality');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P029] Fetal long bone epiphyseal abnormality')
+        .setHelpText('Status:\nReady to submit\n\nSynonyms:\nAbnormal fetal epiphyses\n\nProposed parent:\nAbnormal fetal skeletal morphology - HP:0025662\n\nPMIDs:\nPMID:6726877');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal long bone epiphyseal abnormality is defined as abnormal size, shape, timing, or ossification of the secondary ossification centers at the ends of long bones. On ultrasound, these epiphyses normally appear as echogenic, egg-shaped foci in a gestational age-dependent sequence but may be delayed, absent, irregular, or enlarged when abnormal. These findings may indicate skeletal dysplasia or disordered endochondral ossification.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P029] Fetal long bone epiphyseal abnormality')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P029] Fetal long bone epiphyseal abnormality');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P029] Fetal long bone epiphyseal abnormality')
+        .setHelpText('Disease associations:\n- Multiple epiphyseal dysplasia, dominant - OMIM:132400\n- Multiple epiphyseal dysplasia, recessive - OMIM:226900\n- Spondyloepiphyseal dysplasia congenita - OMIM:183900\n- Achondroplasia - OMIM:100800\n- Spondyloepimetaphyseal dysplasia - OMIM:271700\n- Thanatophoric dysplasia type I - OMIM:187600\n- Thanatophoric dysplasia type II - OMIM:187601\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P030] Fetal long bone metaphyseal abnormality');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P030] Fetal long bone metaphyseal abnormality')
+        .setHelpText('Status:\nReady to submit\n\nSynonyms:\nAbnormal fetal metaphyses\n\nProposed parent:\nAbnormal fetal skeletal morphology - HP:0025662\n\nPMIDs:\nPMID:37351952, PMID:19265753');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal long bone metaphyseal abnormality is defined as abnormal size, shape, contour, or mineralization of the metaphysis, the region between the diaphysis and epiphysis of a long bone. On ultrasound, the metaphysis may appear flared, widened, irregular, cupped, or poorly ossified. These findings reflect abnormal endochondral bone formation and are commonly associated with skeletal dysplasias.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P030] Fetal long bone metaphyseal abnormality')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P030] Fetal long bone metaphyseal abnormality');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P030] Fetal long bone metaphyseal abnormality')
+        .setHelpText('Disease associations:\n- Schmid metaphyseal chondrodysplasia - OMIM:156500\n- Jansen metaphyseal chondrodysplasia - OMIM:156400\n- Gaucher disease - OMIM:230800\n- Craniometaphyseal dysplasia - OMIM:123000\n- Achondroplasia - OMIM:100800\n- Spondyloepimetaphyseal dysplasia - OMIM:271700\n- Thanatophoric dysplasia type I - OMIM:187600\n- Thanatophoric dysplasia type II - OMIM:187601\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P031] Fetal metaphyseal flaring');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P031] Fetal metaphyseal flaring')
+        .setHelpText('Status:\nready to submit\n\nSynonyms:\nErlenmeyer flask deformity\n\nProposed parent:\nFetal long bone metaphyseal abnormality\n\nPMIDs:\nPMID:19444897');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal metaphyseal flaring, also known as an Erlenmeyer flask deformity, is defined as abnormal widening or splaying of the metaphyses, which are the transitional zones between the diaphysis and epiphysis. This results in a disproportionately broad bone end relative to the diaphyseal width on prenatal ultrasound.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P031] Fetal metaphyseal flaring')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P031] Fetal metaphyseal flaring');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P031] Fetal metaphyseal flaring')
+        .setHelpText('Disease associations:\n- Gaucher disease - OMIM:230800\n- Craniometaphyseal dysplasia - OMIM:123000\n- Achondroplasia - OMIM:100800\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P032] Abnormal fetal metaphyseal-diaphyseal angle');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P032] Abnormal fetal metaphyseal-diaphyseal angle')
+        .setHelpText('Status:\nready to submit\n\nSynonyms:\nNone\n\nProposed parent:\nFetal long bone metaphyseal abnormality\n\nPMIDs:\nPMID:26450406');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('An abnormal (increased) fetal metaphyseal-diaphyseal angle is defined as a value greater than or equal to 125 degrees, compared with a normal angle of approximately 95 degrees, and is suggestive of achondroplasia. This angle is measured on ultrasound at the proximal femur or humerus by assessing the junction between the metaphysis and diaphysis, with the long axis of the diaphysis and the contour of the metaphysis used to define the angle. An increased angle reflects abnormal bone modeling and widening at the metaphyseal-diaphyseal junction, a characteristic feature of achondroplasia.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P032] Abnormal fetal metaphyseal-diaphyseal angle')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P032] Abnormal fetal metaphyseal-diaphyseal angle');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P032] Abnormal fetal metaphyseal-diaphyseal angle')
+        .setHelpText('Disease associations:\n- Achondroplasia - OMIM:100800\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P033] Fetal collar hoop sign');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P033] Fetal collar hoop sign')
+        .setHelpText('Status:\nready to submit\n\nSynonyms:\nNone\n\nProposed parent:\nFetal long bone metaphyseal abnormality\n\nPMIDs:\nPMID:19399756');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('The fetal collar hoop sign is an imaging finding characterized by abnormal morphology at the proximal femur, in which the metaphysis appears rounded with poor or irregular ossification and an abnormal, widened transition to the diaphysis. This configuration is associated with relative periosteal overgrowth, creating a collar- or hoop-like appearance surrounding the metaphyseal-diaphyseal junction. On ultrasound, it is identified as a rounded metaphyseal-epiphyseal interface with a broader-than-expected angle of connection to the diaphysis, reflecting disorganized ossification and abnormal bone modeling.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P033] Fetal collar hoop sign')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P033] Fetal collar hoop sign');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P033] Fetal collar hoop sign')
+        .setHelpText('Disease associations:\n- Achondroplasia - OMIM:100800\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P034] Fetal rhizomelia');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P034] Fetal rhizomelia')
+        .setHelpText('Status:\nready to submit\n\nSynonyms:\nNone\n\nProposed parent:\nAbnormal fetal skeletal morphology - HP:0025662\n\nPMIDs:\nPMID:37675393');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal rhizomelia is defined as disproportionate shortening of the proximal segments of the limbs, particularly the humerus and femur, relative to gestational age. It is assessed on prenatal ultrasound by measuring long bone lengths and comparing them to expected norms, with the proximal segments appearing more shortened than the distal segments.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P034] Fetal rhizomelia')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P034] Fetal rhizomelia');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P034] Fetal rhizomelia')
+        .setHelpText('Disease associations:\n- Achondroplasia - OMIM:100800\n- Thanatophoric dysplasia type I - OMIM:187600\n- Thanatophoric dysplasia type II - OMIM:187601\n- Rhizomelic chondrodysplasia punctata type 1 - OMIM:215100\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P035] Fetal mesomelia');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P035] Fetal mesomelia')
+        .setHelpText('Status:\nready to submit\n\nSynonyms:\nNone\n\nProposed parent:\nAbnormal fetal skeletal morphology - HP:0025662\n\nPMIDs:\nPMID:37675393');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal mesomelia is defined as disproportionate shortening of the middle segments of the limbs (radius/ulna and tibia/fibula) relative to the proximal and distal segments. It is assessed on ultrasound by comparing segmental long bone measurements and is characteristic of certain skeletal dysplasias.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P035] Fetal mesomelia')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P035] Fetal mesomelia');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P035] Fetal mesomelia')
+        .setHelpText('Disease associations:\n- Langer mesomelic dysplasia - OMIM:249700\n- Ellis-van Creveld syndrome - OMIM:225500\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P036] Fetal acromelia');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P036] Fetal acromelia')
+        .setHelpText('Status:\nready to submit\n\nSynonyms:\nNone\n\nProposed parent:\nAbnormal fetal skeletal morphology - HP:0025662\n\nPMIDs:\nPMID:37675393');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal acromelia is defined as disproportionate shortening of the distal segments of the limbs (hands and feet) relative to the more proximal segments. On ultrasound, this appears as relatively small hands and feet compared to overall limb length and gestational age.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P036] Fetal acromelia')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P036] Fetal acromelia');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P036] Fetal acromelia')
+        .setHelpText('Disease associations:\n- Acromelic frontonasal dysostosis - OMIM:603671\n- Greig cephalopolysyndactyly syndrome - OMIM:175700\n- Brachydactyly type E - OMIM:113300\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P037] Fetal micromelia');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P037] Fetal micromelia')
+        .setHelpText('Status:\nready to submit\n\nSynonyms:\nNone\n\nProposed parent:\nAbnormal fetal skeletal morphology - HP:0025662\n\nPMIDs:\nPMID:37675393');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal micromelia is defined as severe, generalized shortening of all segments of the limbs (proximal, middle, and distal) relative to gestational age. It is assessed on ultrasound by markedly reduced long bone measurements across all segments and is often associated with severe skeletal dysplasias.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P037] Fetal micromelia')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P037] Fetal micromelia');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P037] Fetal micromelia')
+        .setHelpText('Disease associations:\n- Thanatophoric dysplasia type I - OMIM:187600\n- Thanatophoric dysplasia type II - OMIM:187601\n- Osteogenesis imperfecta - OMIM:166200\n- Osteogenesis imperfecta type II - OMIM:166210\n- Achondrogenesis type IA - OMIM:200600\n- Achondrogenesis type IB - OMIM:600972\n- Achondrogenesis type II - OMIM:200610\n- Campomelic dysplasia - OMIM:114290\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P038] Abnormal fetal hands');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P038] Abnormal fetal hands')
+        .setHelpText('Status:\nready to submit\n\nSynonyms:\nNone\n\nProposed parent:\nAbnormal fetal skeletal morphology - HP:0025662\n\nPMIDs:\nPMID:36526543');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Abnormal fetal hands are defined as deviations in the size, shape, position, or digit number of the hands identified on prenatal ultrasound. Findings may include polydactyly, syndactyly, clenched hands, overlapping digits, abnormal positioning, or disproportionately small or large hands for gestational age. Abnormalities may be isolated or associated with chromosomal, genetic, or skeletal disorders.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P038] Abnormal fetal hands')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P038] Abnormal fetal hands');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P038] Abnormal fetal hands')
+        .setHelpText('Disease associations:\n- Achondroplasia - OMIM:100800\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P039] Fetal brachydactyly');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P039] Fetal brachydactyly')
+        .setHelpText('Status:\nready to submit\n\nSynonyms:\nFetal trident hands\n\nProposed parent:\nAbnormal fetal hands\n\nPMIDs:\nPMID:36526543');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal brachydactyly is defined as abnormal shortening of the digits (phalanges), resulting in fingers or toes that are shorter than expected for gestational age. On prenatal ultrasound, it is identified by disproportionately short digits relative to the hand or foot, often with otherwise normal long bone lengths.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P039] Fetal brachydactyly')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P039] Fetal brachydactyly');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P039] Fetal brachydactyly')
+        .setHelpText('Disease associations:\n- Achondroplasia - OMIM:100800\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P040] Fetal hitchhiker thumbs');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P040] Fetal hitchhiker thumbs')
+        .setHelpText('Status:\nready for submit\n\nSynonyms:\nNone\n\nProposed parent:\nAbnormal fetal hands\n\nPMIDs:\nPMID:12901408');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal hitchhiker thumbs are defined as abnormally positioned thumbs that are persistently held in a hyperextended and abducted posture on prenatal ultrasound. This finding is assessed in real-time imaging and is characterized by limited flexion and a fixed, exaggerated extension of the thumb relative to the palm. It is classically associated with diastrophic dysplasia and related skeletal dysplasias.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P040] Fetal hitchhiker thumbs')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P040] Fetal hitchhiker thumbs');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P040] Fetal hitchhiker thumbs')
+        .setHelpText('Disease associations:\n- Diastrophic dysplasia - OMIM:222600\n\nNotes:\nCollaborator label had duplicate word: Fetal fetal hitchhiker thumbs.');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P041] Fetal temporal lobe malformation');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P041] Fetal temporal lobe malformation')
+        .setHelpText('Status:\nready to submit\n\nSynonyms:\nFetal temporal lobe dysgenesis, fetal temporal lobe abnormal folding, fetal abnormal temporal lobe gyration\n\nProposed parent:\nAbnormal fetal central nervous system morphology - HP:0034206\n\nPMIDs:\nPMID:24616001, PMID:29170271');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('Fetal temporal lobe malformation is defined as abnormal development, structure, or organization of the temporal lobes identified on prenatal imaging. It is assessed on ultrasound or fetal MRI, where findings may include asymmetry, abnormal size or contour, disrupted sulcation, or atypical signal characteristics. These abnormalities reflect altered cortical development and may be associated with genetic conditions, brain malformations, or neurodevelopmental disorders.');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P041] Fetal temporal lobe malformation')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P041] Fetal temporal lobe malformation');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P041] Fetal temporal lobe malformation')
+        .setHelpText('Disease associations:\n- Achondroplasia - OMIM:100800\n- Hypochondroplasia - OMIM:146000\n- Thanatophoric dysplasia type I - OMIM:187600\n- Thanatophoric dysplasia type II - OMIM:187601\n- Muenke syndrome - OMIM:602849\n\nNotes:\nNone');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P042] Fetal long bone fractures');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P042] Fetal long bone fractures')
+        .setHelpText('Status:\nListed in high-level proposed qualitative terms; detailed source fields not provided\n\nSynonyms:\nNone\n\nProposed parent:\nAbnormal fetal skeletal morphology - HP:0025662\n\nPMIDs:\nNone');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('None');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P042] Fetal long bone fractures')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P042] Fetal long bone fractures');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P042] Fetal long bone fractures')
+        .setHelpText('Disease associations:\nNone\n\nNotes:\nThis term was listed in the high-level proposed qualitative terms, but the source notes did not provide a detailed definition, PMIDs, parent review, or disease associations.');
+
+var pageBreakItem = form.addPageBreakItem();
+pageBreakItem.setTitle('[P043] Fetal metaphyseal irregularity');
+var sectionHeaderItem = form.addSectionHeaderItem();
+sectionHeaderItem.setTitle('Core details for [P043] Fetal metaphyseal irregularity')
+        .setHelpText('Status:\nListed in high-level proposed qualitative terms; detailed source fields not provided\n\nSynonyms:\nNone\n\nProposed parent:\nFetal long bone metaphyseal abnormality\n\nPMIDs:\nNone');
+var definitionItem = form.addSectionHeaderItem();
+definitionItem.setTitle('Definition')
+        .setHelpText('None');
+var reviewItem = form.addSectionHeaderItem();
+reviewItem.setTitle('Review')
+        .setHelpText('For each row, choose the option that best reflects your assessment. You may leave rows blank if you are unsure or prefer to return later.');
+var gridItem = form.addGridItem();
+gridItem.setTitle('[P043] Fetal metaphyseal irregularity')
+        .setRows(['Term label', 'Synonyms', 'Parent(s)', 'Definition', 'PMIDs', 'Disease associations'])
+        .setColumns(['Accept', 'Reject', 'Revise', 'n/a']);
+var commentsHeaderItem = form.addSectionHeaderItem();
+commentsHeaderItem.setTitle('Comments')
+        .setHelpText('Optional: suggest edits, missing synonyms, parent changes, definition changes, PMIDs, or disease associations.');
+var commentItem = form.addParagraphTextItem();
+commentItem.setTitle('Comments for [P043] Fetal metaphyseal irregularity');
+var supportingDetailsItem = form.addSectionHeaderItem();
+supportingDetailsItem.setTitle('Supporting details for [P043] Fetal metaphyseal irregularity')
+        .setHelpText('Disease associations:\nNone\n\nNotes:\nThis term was listed in the high-level proposed qualitative terms, but the source notes did not provide a detailed definition, PMIDs, parent review, or disease associations.');
+
+}
