@@ -1,8 +1,9 @@
-package org.monarchinitiative.hpo2gforms;
+package org.p2gx.hpo2gforms;
 
-import org.monarchinitiative.hpo2gforms.cmd.DownloadCommand;
-import org.monarchinitiative.hpo2gforms.cmd.GoogleFormsCommand;
-import org.monarchinitiative.hpo2gforms.cmd.ProposalFormsCommand;
+import org.p2gx.hpo2gforms.cmd.DownloadCommand;
+import org.p2gx.hpo2gforms.cmd.GoogleFormsCommand;
+import org.p2gx.hpo2gforms.cmd.TsvCommand;
+import org.p2gx.hpo2gforms.cmd.ProposalFormsCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import picocli.CommandLine;
@@ -23,6 +24,7 @@ public class Main implements Callable<Integer> {
             CommandLine cline = new CommandLine(new Main())
                     .addSubcommand("download", new DownloadCommand())
                     .addSubcommand("gform", new GoogleFormsCommand())
+                    .addSubcommand("tsv", new TsvCommand())
                     .addSubcommand("proposal-forms", new ProposalFormsCommand())
                    ;
             cline.setToggleBooleanFlags(false);

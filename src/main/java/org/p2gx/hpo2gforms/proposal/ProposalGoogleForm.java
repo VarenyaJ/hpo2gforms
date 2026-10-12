@@ -1,4 +1,4 @@
-package org.monarchinitiative.hpo2gforms.proposal;
+package org.p2gx.hpo2gforms.proposal;
 
 import java.util.ArrayList;
 import java.util.List;

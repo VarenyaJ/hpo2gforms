@@ -1,8 +1,8 @@
-package org.monarchinitiative.hpo2gforms.cmd;
+package org.p2gx.hpo2gforms.cmd;
 
-import org.monarchinitiative.hpo2gforms.proposal.ProposalGoogleForm;
-import org.monarchinitiative.hpo2gforms.proposal.ProposalTerm;
-import org.monarchinitiative.hpo2gforms.proposal.ProposalYamlReader;
+import org.p2gx.hpo2gforms.proposal.ProposalGoogleForm;
+import org.p2gx.hpo2gforms.proposal.ProposalTerm;
+import org.p2gx.hpo2gforms.proposal.ProposalYamlReader;
 import org.monarchinitiative.phenol.base.PhenolRuntimeException;
 import picocli.CommandLine;
 
