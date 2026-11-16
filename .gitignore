@@ -27,3 +27,8 @@ replay_pid*
 target/
 HP_*.*
 /target/
+
+# Local environment files
+.env
+.env.*
+!.env.example
